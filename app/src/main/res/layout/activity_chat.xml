@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:background="@color/azure"
+            android:elevation="4dp"
+            android:layout_weight="0">
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+                android:backgroundTint="@color/azure"
+                app:tint="#000000"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:id="@+id/back" />
+
+        <TextView
+                android:text="SENDER NAME"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:id="@+id/sendername" />
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_baseline_drag_indicator_24"
+                android:backgroundTint="@color/azure"
+                app:tint="#000000"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:id="@+id/menu" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EFEEEE"
+            android:id="@+id/recyclerview"
+            android:layout_weight="1" />
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0">
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:hint="Write Your Message"
+                android:layout_weight="1"
+                android:background="@drawable/msg_edittext_background"
+                android:textSize="20sp"
+                android:gravity="top|start"
+                android:id="@+id/typemsg"
+                android:scrollbars="vertical"
+                android:maxLines="10"
+                android:padding="15dp" />
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_baseline_send_24"
+                android:layout_weight="0"
+                app:tint="@color/black"
+                android:backgroundTint="@color/white"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:id="@+id/send" />
+    </LinearLayout>
+
+</LinearLayout>

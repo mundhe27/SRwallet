@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+
+    <com.google.android.material.tabs.TabLayout
+            app:tabSelectedTextColor="@color/purple_200"
+            android:id="@+id/fund_tab"
+            android:layout_width="match_parent"
+            app:tabIndicatorColor="@color/purple_500"
+            android:layout_height="wrap_content"/>
+    <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/fund_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/fund_tab"/>
+
+</RelativeLayout>

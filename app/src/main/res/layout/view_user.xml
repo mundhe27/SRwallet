@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/userCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="200dp"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="200dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="@string/applicant_details"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1,2"
+            tools:ignore="UselessParent">
+
+            <TableRow
+                android:layout_margin="5dp"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_column="1"
+                    android:layout_margin="3dp"
+                    android:text="@string/user_id"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_id"
+                    android:layout_column="2"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_margin="5dp"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_column="1"
+                    android:layout_margin="3dp"
+                    android:text="@string/name"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_column="2"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_margin="5dp"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_column="1"
+                    android:layout_margin="3dp"
+                    android:text="@string/email"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_email"
+                    android:layout_column="2"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_margin="5dp"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_column="1"
+                    android:layout_margin="3dp"
+                    android:text="@string/phone_no"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_phone"
+                    android:layout_column="2"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_margin="5dp"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_column="1"
+                    android:layout_margin="3dp"
+                    android:text="@string/address"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_address"
+                    android:layout_column="2"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_margin="5dp"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_column="1"
+                    android:layout_margin="3dp"
+                    android:text="@string/date_of_birth"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_dob"
+                    android:layout_column="2"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_margin="5dp"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_column="1"
+                    android:layout_margin="3dp"
+                    android:text="@string/occupation"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_occupation"
+                    android:layout_column="2"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_margin="5dp"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_column="1"
+                    android:layout_margin="3dp"
+                    android:text="@string/is_agent"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_agent"
+                    android:layout_column="2"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_margin="5dp"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_column="1"
+                    android:layout_margin="3dp"
+                    android:text="@string/aadhar_number"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_aadhar"
+                    android:layout_column="2"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_margin="5dp"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_column="1"
+                    android:layout_margin="3dp"
+                    android:text="@string/annual_income"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_annual_income"
+                    android:layout_column="2"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+        </TableLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="3dp"
+            android:backgroundTint="@color/error"
+            android:gravity="center"
+            android:text="@string/close"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

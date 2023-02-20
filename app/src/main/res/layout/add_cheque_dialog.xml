@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/add_cheque_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_cheque"
+            android:layout_marginBottom="10dp"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    <Spinner android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:id="@+id/walletspin"
+             android:layout_margin="10dp"
+             android:background="@drawable/tv" />
+
+    <EditText
+            android:id="@+id/edit_cheque_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/tv"
+            android:padding="10dp"
+            android:hint="@string/enter_total_number_of_chequebooks"
+            android:inputType="number"
+            android:importantForAutofill="no"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/note_cost_to_add_one_cheque_is_rs_5_per_cheque"
+        android:textColor="@color/error"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addcheque_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/add_cheque"
+                android:layout_margin="10dp"
+                android:background="@drawable/tv"
+                android:padding="10dp"
+                android:backgroundTint="@color/teal_200" />
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cancelcheque_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/cancel"
+                android:layout_margin="10dp"
+                android:background="@drawable/tv"
+                android:padding="10dp"
+                android:backgroundTint="@color/teal_200" />
+    </LinearLayout>
+
+</LinearLayout>

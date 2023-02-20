@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true">
+
+    <TextView
+        android:id="@+id/tvTransaction"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Transaction"
+        android:onClick="onClickTransaction"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:id="@+id/tvLoan"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Loan"
+        android:onClick="onClickLoan"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:id="@+id/tvInsurance"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Insurance"
+        android:onClick="onClickInsurance"
+        android:textSize="30sp"
+        />
+
+</LinearLayout>

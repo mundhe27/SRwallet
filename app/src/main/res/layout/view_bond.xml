@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="200dp"
+    app:cardElevation="200dp"
+    app:cardCornerRadius="30dp"
+    android:layout_margin="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1,2"
+            tools:ignore="UselessParent">
+
+            <TableRow
+                android:id="@+id/userRow"
+                tools:ignore="UselessParent"
+                android:layout_margin="5dp"
+                android:visibility="visible">
+                <TextView
+                    android:text="@string/user_id"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:layout_column="1" />
+
+                <TextView
+                    android:id="@+id/bond_i_user_id"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:layout_column="2" />
+            </TableRow>
+
+            <TableRow android:layout_margin="5dp"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:text="@string/type"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:layout_column="1" />
+
+                <TextView
+                    android:id="@+id/bond_i_type"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:layout_column="2" />
+            </TableRow>
+
+            <TableRow android:layout_margin="5dp"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:text="@string/amount"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:layout_column="1" />
+
+                <TextView
+                    android:id="@+id/bond_i_amount"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:layout_column="2" />
+            </TableRow>
+            <TableRow android:layout_margin="5dp"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:text="@string/duration"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:layout_column="1" />
+
+                <TextView
+                    android:id="@+id/bond_i_duration"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="2 to 15 years"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:layout_column="2" />
+            </TableRow>
+
+
+
+            <TableRow
+                android:id="@+id/roiRow"
+                tools:ignore="UselessParent"
+                android:layout_margin="5dp">
+                <TextView
+                    android:text="@string/rate_of_interest"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:layout_column="1" />
+
+                <TextView
+                    android:id="@+id/bond_i_roi"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="8% to 15%"
+                    android:layout_margin="3dp"
+                    android:layout_column="2" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+            android:id="@+id/group_menu">
+<!--        <item-->
+<!--            android:id="@+id/home"-->
+<!--            android:icon="@drawable/ic_baseline_home_24"-->
+<!--            android:title="@string/home" />-->
+        <item
+            android:id="@+id/my_account"
+            android:icon="@drawable/mywallet"
+            android:title="My Account"/>
+        <item
+            android:id="@+id/transactions"
+            android:title="@string/transactions"
+            android:icon="@drawable/ic_transaction"/>
+        <item
+            android:id="@+id/loansagent"
+            android:title="@string/loans"
+            android:icon="@drawable/ic_baseline_attach_loan"
+                android:visible="true"/>
+        <item
+                android:id="@+id/insuranceagent"
+                android:title="@string/insurance"
+                android:icon="@drawable/ic_baseline_insurance"
+                android:visible="true" />
+        <item
+            android:id="@+id/bond"
+            android:title="@string/Bond"
+            android:icon="@drawable/ic_baseline_bond"/>
+        <item
+            android:id="@+id/depositagent"
+            android:title="@string/Deposit"
+            android:icon="@drawable/ic_baseline_deposit"
+                android:visible="true"/>
+
+        <item
+            android:id="@+id/Shareagent"
+            android:title="@string/share"
+            android:icon="@drawable/ic_baseline_share_24"
+                android:visible="true"
+            />
+
+        <item
+            android:id="@+id/view_contacts"
+            android:title="@string/view_contacts"
+            android:visible="true"
+            />
+
+
+        <item
+            android:id="@+id/logout"
+            android:title="@string/logout"
+            android:icon="@drawable/ic_baseline_logout_24"
+            />
+    </group>
+</menu>

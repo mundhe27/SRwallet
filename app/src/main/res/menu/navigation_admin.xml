@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/my_account"
+            android:icon="@drawable/mywallet"
+            android:title="My Account"/>
+                <item
+                    android:id="@+id/Perm"
+                    android:icon="@drawable/ic_baseline_help_center_24"
+                    android:title="@string/permissions" />
+
+        <item
+                android:id="@+id/transactions"
+                android:title="@string/transactions"
+                android:icon="@drawable/ic_transaction"/>
+        <item
+                android:id="@+id/loans"
+                android:title="@string/loans"
+                android:icon="@drawable/ic_baseline_attach_loan"/>
+        <item
+                android:id="@+id/insurance"
+                android:title="@string/insurance"
+                android:icon="@drawable/ic_baseline_insurance"/>
+        <item
+                android:id="@+id/bond"
+                android:title="@string/Bond"
+                android:icon="@drawable/ic_baseline_bond"/>
+        <item
+                android:id="@+id/deposit"
+                android:title="@string/Deposit"
+                android:icon="@drawable/ic_baseline_deposit"/>
+        <item
+            android:id="@+id/view_contacts"
+            android:title="@string/view_contacts"
+            />
+
+
+        <item
+                android:id="@+id/Share"
+                android:title="@string/share"
+                android:icon="@drawable/ic_baseline_share_24"/>
+
+
+        <item
+                android:id="@+id/logout"
+                android:title="@string/logout"
+                android:icon="@drawable/ic_baseline_logout_24"
+                />
+    </group>
+</menu>

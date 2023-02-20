@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1,2"
+                tools:ignore="UselessParent">
+
+            <TableRow
+                    android:id="@+id/userRow"
+                    tools:ignore="UselessParent"
+                    android:layout_margin="5dp"
+                    android:visibility="visible">
+
+                <TextView
+
+                        android:text="@string/user_id"
+                        android:textSize="18sp"
+                        android:textColor="@color/neon_blue"
+                        android:textStyle="bold"
+                        android:layout_margin="3dp"
+                        android:layout_column="1" />
+
+                <TextView
+                        android:gravity="center"
+                        android:id="@+id/deposit_user_id"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_margin="3dp"
+                        android:layout_column="2" />
+            </TableRow>
+
+            <TableRow
+                    android:id="@+id/typerow"
+                    tools:ignore="UselessParent"
+                    android:layout_margin="5dp"
+                    android:visibility="visible">
+
+                <TextView
+                        android:text="Type"
+                        android:textSize="18sp"
+                        android:textColor="@color/neon_blue"
+                        android:textStyle="bold"
+                        android:layout_margin="3dp"
+                        android:layout_column="1" />
+
+                <TextView
+                        android:gravity="center"
+                        android:id="@+id/deposit_type"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_margin="3dp"
+                        android:layout_column="2" />
+            </TableRow>
+
+
+            <TableRow
+                    android:layout_margin="5dp"
+                    tools:ignore="UselessParent">
+
+                <TextView
+                        android:text="@string/amount"
+                        android:textSize="18sp"
+                        android:textColor="@color/neon_blue"
+                        android:textStyle="bold"
+                        android:layout_margin="3dp"
+                        android:layout_column="1" />
+
+                <TextView
+                        android:gravity="center"
+                        android:id="@+id/deposit_amount"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_margin="3dp"
+                        android:layout_column="2" />
+            </TableRow>
+
+            <TableRow
+                    android:id="@+id/roiRow"
+                    tools:ignore="UselessParent"
+                    android:layout_margin="5dp">
+
+                <TextView
+                        android:text="@string/rate_of_interest"
+                        android:textSize="18sp"
+                        android:textColor="@color/neon_blue"
+                        android:textStyle="bold"
+                        android:layout_margin="3dp"
+                        android:layout_column="1" />
+
+                <TextView
+                        android:gravity="center"
+
+                        android:id="@+id/deposit_roi"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_margin="3dp"
+                        android:layout_column="2" />
+            </TableRow>
+
+            <TableRow
+                    android:id="@+id/durrow"
+                    tools:ignore="UselessParent"
+                    android:layout_margin="5dp">
+
+
+
+                <TextView
+                        android:id="@+id/durationtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Duration"
+                        android:layout_margin="3dp"
+
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/neon_blue"
+                        android:layout_column="1"/>
+
+                <Spinner
+                        android:gravity="center"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/deposit_duration"
+                        android:layout_marginStart="8dp"
+                        android:layout_column="2"
+                        android:layout_margin="3dp"
+                        android:layout_toRightOf="@id/durationtxt"/>
+
+
+            </TableRow>
+
+
+
+        </TableLayout>
+<!--        <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginTop="8dp">-->
+
+<!--            <TextView-->
+<!--                    android:id="@+id/durationtxt"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Duration"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:layout_marginStart="10dp" />-->
+
+<!--            <Spinner-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/deposit_duration"-->
+<!--                    android:layout_marginStart="8dp"-->
+<!--                    android:layout_marginEnd="32dp"-->
+<!--                    android:layout_toRightOf="@id/durationtxt"/>-->
+<!--            -->
+<!--        </RelativeLayout>-->
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

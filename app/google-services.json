@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "279440775924",
+    "project_id": "srwallet-a86df",
+    "storage_bucket": "srwallet-a86df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279440775924:android:876dfd8987a590d0cc9ca1",
+        "android_client_info": {
+          "package_name": "com.bsr.bsrcoin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279440775924-umr3d4sbmp2e21jaidj0ot0krvba3vc3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsDehwdRYxQTQGpsXDav4tG1RxrLqBcTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279440775924-umr3d4sbmp2e21jaidj0ot0krvba3vc3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

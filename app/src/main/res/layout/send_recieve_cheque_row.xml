@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="20dp"
+        android:elevation="250dp"
+        app:cardElevation="250dp">
+
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1,2"
+            android:padding="10dp">
+
+        <TableRow android:layout_margin="5dp">
+            <TextView
+                    android:text="@string/date_cheque"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:layout_column="1" />
+
+            <TextView
+                    android:id="@+id/c_date"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:layout_column="2" />
+        </TableRow>
+
+        <TableRow android:layout_margin="5dp">
+            <TextView
+                    android:id="@+id/sender_reciever"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:layout_column="1" />
+
+            <TextView
+                    android:id="@+id/c_account"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:layout_column="2" />
+        </TableRow>
+
+        <TableRow android:layout_margin="5dp">
+            <TextView
+                    android:text="@string/amount"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:layout_column="1" />
+
+            <TextView
+                    android:id="@+id/c_amount"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:layout_column="2" />
+        </TableRow>
+
+        <TableRow android:layout_margin="5dp">
+            <TextView
+                    android:text="@string/status"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:layout_column="1" />
+
+            <TextView
+                    android:id="@+id/c_status"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:layout_column="2" />
+        </TableRow>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/c_accept"
+            android:text="@string/accept_cheque"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/green"
+            android:textStyle="bold"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:visibility="gone"
+        />
+
+    </TableLayout>
+
+</androidx.cardview.widget.CardView>
