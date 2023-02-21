@@ -52,22 +52,12 @@ class MainActivity : AppCompatActivity() {
 
      lateinit var view: View
 
-     private lateinit var readbtn: Button
 
     @SuppressLint("MissingInflatedId")
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_screen)
-
-
-        val readbtn = findViewById<Button>(R.id.readbtn)
-        readbtn.setOnClickListener {
-            val intent = Intent(this@MainActivity,display_contacts::class.java)
-            startActivity(intent)
-        }
-
-
 
         permissionLauncher = registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions())
         {

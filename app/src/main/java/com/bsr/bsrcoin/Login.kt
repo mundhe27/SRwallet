@@ -37,9 +37,20 @@ class Login : AppCompatActivity() {
 
     lateinit var context: Context
 
+    private lateinit var readerbtn: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+
+        readerbtn = findViewById(R.id.readbtn)
+        readerbtn.setOnClickListener {
+            val intent = Intent(this, display_contacts::class.java)
+            startActivity(intent)
+        }
+
+
 
         checkIFLogin()
         val firebase = FirebaseDatabase.getInstance()
