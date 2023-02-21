@@ -1,6 +1,7 @@
 package com.bsr.bsrcoin
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
@@ -49,12 +50,24 @@ class MainActivity : AppCompatActivity() {
     lateinit var floatingActionButton : FloatingActionButton
     lateinit var binding: ActivityHomeScreenBinding
 
-    lateinit var view: View
+     lateinit var view: View
 
+     private lateinit var readbtn: Button
+
+    @SuppressLint("MissingInflatedId")
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_screen)
+
+
+        val readbtn = findViewById<Button>(R.id.readbtn)
+        readbtn.setOnClickListener {
+            val intent = Intent(this@MainActivity,display_contacts::class.java)
+            startActivity(intent)
+        }
+
+
 
         permissionLauncher = registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions())
         {
@@ -67,6 +80,8 @@ class MainActivity : AppCompatActivity() {
 
         initialise()
         setUpActionBar()
+
+
 
 
 

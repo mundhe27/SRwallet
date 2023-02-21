@@ -59,7 +59,8 @@ class Register : AppCompatActivity() {
         val pincode=findViewById<EditText>(R.id.pincode)
         val refcode=findViewById<EditText>(R.id.reference_id)
         val switch = findViewById<Button>(R.id.toogle_btn)
-        
+
+
         switch.setOnClickListener { 
             val intent = Intent(this@Register, AgentRegister::class.java)
             startActivity(intent)
